@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Teste de API</title>
+
+
+</head>
+<body>
+	<div id="label1">
+		Nome: <span th:text="${nome}"></span><p>
+		Id: <span th:text="${id}"></span>
+	
+	</div>
+	
+	<table>
+		<tr th:each = "postagens : ${post}">
+			<td ><span th:text="${postagens}"></span></td>
+		</tr>
+	</table>
+</body>
+</html>
